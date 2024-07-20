@@ -1,0 +1,35 @@
+
+.privacy-policy {
+    padding-top: 4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  .privacy-policy h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .privacy-policy h2 {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .privacy-policy p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .privacy-policy a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .privacy-policy a:hover {
+    text-decoration: underline;
+  }
+  

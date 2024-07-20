@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding-bottom:0;
+    font-family:'Poppins',sans-serif;
+}
+.sections{
+    display: flex;
+    background-color:  #f1f1f3;
+    width: 100vw;
+    height:92vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    padding-top: 3rem;
+
+}
+.left {
+    width: 50%;
+    margin-left: 4rem;
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right img{
+    width: 500px;
+    height:500px;
+}
+.first{
+    color: #333333;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+#second{
+    color: #6366F1;
+    font-size: 4rem;
+}
+.third{
+    font-size:1.5rem;
+    font-weight: 400;
+}
+.focus{
+    color: rgb(127, 138, 148);
+}
+.buttons{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.resume{
+    padding: 15px 20px;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #f1f1f3;
+    background-color: #6366F1;
+}
+.resume:hover{
+    background-color: #5d60dc;
+}
+.message{
+    color: #555;
+}
