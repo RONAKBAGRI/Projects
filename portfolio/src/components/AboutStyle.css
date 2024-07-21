@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-page {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 8rem 2rem 5rem;
+    background-color: #f1f1f3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.left-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-page img {
+    width: 450px;
+    height: 450px;
+    border: none;
+    border-radius: 14rem;
+}
+
+.right-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 60%;
+}
+
+.educ-box, .personal-box, .hobby-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.educ-box img, .personal-box img, .hobby-box img {
+    height: 23px;
+    width: 23px;
+}
+
+.edu-content, .hobby-content {
+    padding-top: 10px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.hobby {
+    margin-top: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .left-page img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .right-page {
+        max-width: 70%;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-page {
+        flex-direction: column;
+        padding: 5rem 2rem;
+        padding-top: 8rem;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .left-page {
+        margin-bottom: 2rem;
+    }
+
+    .left-page img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .right-page {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .personal-box h3, .educ-box h3, .hobby-box h3 {
+        font-size: 1.25rem;
+    }
+
+    .personal-box img, .educ-box img, .hobby-box img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .bold {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-page {
+        padding: 4rem 1rem;
+        padding-top: 10rem;
+        height: auto;
+    }
+
+    .left-page img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .personal-box h3, .educ-box h3, .hobby-box h3 {
+        font-size: 1rem;
+    }
+
+    .personal-box img, .educ-box img, .hobby-box img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .bold {
+        font-size: 0.8rem;
+    }
+}

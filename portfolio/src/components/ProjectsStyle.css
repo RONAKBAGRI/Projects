@@ -1,0 +1,52 @@
+.projects-page {
+  background-color: #f4f4f4;
+  padding-top: 6rem;
+  min-height: 100vh;
+}
+
+.projects-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 250px;
+  text-align: center;
+}
+
+.project-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.project-name {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}

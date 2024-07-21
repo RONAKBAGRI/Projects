@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Experience-Page {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 4%, rgba(0, 212, 255, 1) 86%);
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  background-color: #e7e6e6;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.left-exp, .right-exp {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.left-exp img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(113, 54, 140);
+  margin-bottom: 0.5rem;
+}
+
+.comp-message {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(41, 190, 227);
+  margin-bottom: 1rem;
+}
+
+.programme {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.domain {
+  color: #808080;
+  font-size: 1rem;
+}
+
+.summary {
+  font-size: 0.9rem;
+  color: #808080;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .comp-message {
+    font-size: 0.9rem;
+  }
+
+  .programme {
+    font-size: 1rem;
+  }
+
+  .domain {
+    font-size: 0.9rem;
+  }
+
+  .summary {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-exp img {
+    width: 60px;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .comp-message {
+    font-size: 0.8rem;
+  }
+
+  .programme {
+    font-size: 0.9rem;
+  }
+
+  .domain {
+    font-size: 0.8rem;
+  }
+
+  .summary {
+    font-size: 0.7rem;
+  }
+}
