@@ -1,10 +1,10 @@
 # Ronak's Portfolio
 
-Welcome to Ronak's Portfolio! This is a personal portfolio website built to showcase my projects, skills, and experience.
+Welcome to Ronak's Portfolio! This personal portfolio website showcases my projects, skills, and experience.
 
 ## Overview
 
-This portfolio website features a variety of sections including:
+The portfolio website features various sections, including:
 - Home
 - About
 - Skills
@@ -18,7 +18,7 @@ The website is designed to be responsive and includes a hamburger menu for mobil
 
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 - **Navigation**: Easy navigation with a hamburger menu for mobile views.
-- **Dynamic Content**: Sections for showcasing projects, skills, and experience.
+- **Dynamic Content**: Sections to showcase projects, skills, and experience.
 - **Contact Form**: Allows visitors to get in touch.
 
 ## Technologies Used
@@ -37,3 +37,7 @@ To get started with the project, follow these steps:
 
    ```bash
    git clone https://github.com/RONAKBAGRI/Projects/tree/main/portfolio
+
+2. **Visit my website:**
+   ```bash
+   Click to go https://ronakbagriportfolio.netlify.app/
