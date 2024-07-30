@@ -65,7 +65,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>www.ronakportfolio.example.com || ©️ All Rights Reserved</p>
+        <p>https://ronakbagriportfolio.netlify.app || ©️ All Rights Reserved</p>
       </div>
     </div>
   );

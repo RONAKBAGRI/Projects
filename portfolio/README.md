@@ -40,4 +40,4 @@ To get started with the project, follow these steps:
 
 2. **Visit my website:**
    ```bash
-   Click to go https://ronakbagriportfolio.netlify.app/
+   Click to go https://ronakbagriportfolio.netlify.app
