@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+:root {
+    --background: rgb(24, 24, 24);
+    --second-background: rgb(21, 21, 21);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2rem;
+    padding: 2em 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+nav ul a {
+    color: white;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+nav ul a:hover {
+    opacity: 1;
+}
+
+.Links {
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: antiquewhite;
+    color: var(--background);
+}
+
+span {
+    background: linear-gradient(to right, #6cff52, #3ec5ff);
+    background-clip: text;
+    color: transparent;
+}
+
+#menu {
+    color: aliceblue;
+    font-size: 3em;
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 5% 15%;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: azure;
+}
+
+#home img {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+    margin-top: 5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+#home img:hover {
+    transform: scale(1.05); /* Example of image zoom on hover */
+}
+
+.info-box {
+    background-color: var(--second-background);
+    border-radius: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+    max-width: 800px;
+    margin: 0 auto; /* Center the card horizontally */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.info-box:hover {
+    transform: translateY(-10px); /* Elevate the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.info-box h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+.info-box h3 {
+    font-size: 1.8em;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.info-box p {
+    font-size: 1.2em;
+    color: white;
+    opacity: 0.9;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+
+.btn-box .btn:nth-of-type(2) {
+    background-color: white;
+    color: var(--background);
+}
+
+.btn-box .btn:nth-of-type(2):hover {
+    background-color: var(--background);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #6cff52, #3ec5ff);
+}
+
+/* Section styling */
+#about {
+    background-color: var(--background); /* Background color for the section */
+    padding: 5% 15%; /* Padding around the section */
+}
+
+/* Container for the cards */
+.about-cards-container {
+    display: flex;
+    justify-content: center; /* Center-align the card horizontally */
+    align-items: center; /* Center-align the card vertically */
+    height: 100%; /* Full height of the section */
+}
+
+/* Card styling */
+.about-card {
+    background-color: white; /* White background for the card */
+    color: var(--background); /* Text color */
+    border-radius: 1em; /* Rounded corners */
+    padding: 2em; /* Padding inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 100%; /* Full width of its container */
+    max-width: 800px; /* Maximum width of the card */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition effects */
+    margin: 0 auto; /* Center the card horizontally */
+    display: flex;
+    flex-direction: column; /* Stack heading and paragraphs vertically */
+}
+
+/* Card hover effects */
+.about-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Heading styling */
+.about-heading {
+    font-size: 2.5em; /* Font size for the heading */
+    margin-bottom: 0.5em; /* Space below the heading */
+    text-align: center; /* Center-align the heading */
+}
+
+/* Paragraph styling */
+.about-paragraph {
+    font-size: 1.2em; /* Font size for paragraphs */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 1em; /* Space below paragraphs */
+    opacity: 0.9; /* Slightly transparent text */
+}
+
+
+
+
+/* Skills Section */
+.skills-section {
+    background-color: var(--background);
+    padding: 5% 15%;
+}
+
+/* Outer Card Container */
+.skills-card {
+    display: flex;
+    background-color: rgb(114, 113, 113);
+    border-radius: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+    height: 800px; /* Increased height for better card size */
+}
+
+/* Image Section */
+.skills-image {
+    flex: 1;
+    max-width: 50%; /* 50% of the outer card */
+    margin-right: 2em;
+    padding-top: 200px; /* Space between image and content */
+}
+
+.skills-image img {
+    width: 100%; /* Ensures the image covers the container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 0.5em;
+}
+
+/* Content Section */
+.skills-content {
+    flex: 1;
+    max-width: 50%; /* 50% of the outer card */
+}
+
+/* Heading */
+.skills-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: white; /* Adjust as needed */
+}
+
+/* Skill List */
+.skills-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Aligns list items vertically */
+}
+
+.skills-content li {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    color: white; /* Adjust as needed */
+}
+
+.skills-content i {
+    margin-right: 0.5em;
+}
+
+
+
+/* General Styles for the Card */
+.card {
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures content stays within the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    background-color: #fff; /* Card background color */
+    position: relative; /* Needed for absolute positioning of summary */
+  }
+  
+  /* Styles for the Image */
+  .card-image {
+    width: 100%; /* Ensures the image covers the width of the card */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px 0 0 10px; /* Rounded corners only on the left side */
+  }
+  
+  /* Flexbox for the Card Content */
+  .left-exp {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .right-exp {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Allows summary to be pushed to the bottom */
+  }
+  
+  /* Positioning the Summary */
+  .summary {
+    margin-top: auto; /* Pushes the summary to the bottom */
+    text-align: right; /* Aligns text to the right */
+  }
+  
+  
+  
+
+.box {
+    border: 3px solid rgb(49, 49, 49);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 3em;
+    gap: 2em;
+    color: grey;
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+}
+
+.box:hover {
+    border: 3px solid rgb(100, 100, 100);
+}
+
+.box p {
+    opacity: 0.8;
+}
+
+.box h1 {
+    font-size: 2em;
+}
+
+.box img {
+    min-width: 25px;
+    border-radius: 1em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box img:hover {
+    transform: scale(1.1); /* Example of image zoom on hover */
+}
+
+/* Contact Section */
+#contact {
+    background-color: var(--background); /* Adjust background color as needed */
+    padding: 5% 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px; /* Ensures the section has enough height */
+}
+
+.contact-card {
+    background-color: rgb(114, 113, 113); /* Card background color */
+    border-radius: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    width: 100%;
+    max-width: 600px; /* Card width */
+    box-sizing: border-box;
+}
+
+/* Header */
+.contact-card h1 {
+    text-align: center;
+    color: white; /* Header text color */
+    margin-bottom: 1.5em;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    color: white; /* Label text color */
+}
+
+.form-group input {
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+    background-color: #fff; /* Input background color */
+}
+
+.form-group input::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+/* Button */
+.submit-button {
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    padding: 0.75em;
+    border-radius: 0.5em;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Button hover color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--second-background);
+    color: white;
+    padding: 2em 15%;
+    text-align: center;
+    border-top: 1px solid #333;
+    font-size: 1em;
+}
+
+footer a {
+    color: #6cff52;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
